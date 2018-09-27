@@ -38,10 +38,11 @@ Route::post('/materia/update', 'MateriaController@update');*/
 });*/
 
 Route::resource('materia', 'MateriaController');
+Route::resource('alumno', 'AlumnoController');
 
 ////////////////////////
 Route::get('/usuarios', 'UsuarioController@index');
-Route::get('/alumnos', 'AlumnoController@index');
+//Route::get('/alumnos', 'AlumnoController@index');
 Route::get('/empleados', 'EmpleadoController@index');
 Route::get('/dependencias', 'DependenciaController@index');
 //////////////////////

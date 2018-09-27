@@ -25,7 +25,7 @@ class MateriaController extends Controller
      */
     public function create()
     {
-        return view('materias.fromMateria'); 
+        return view('materias.formMateria'); 
     }
 
     /**
@@ -38,11 +38,19 @@ class MateriaController extends Controller
     {
         //dd($request->all());
         //Validacion
-        $nombre_materia = $request->input('nombre_materia');
+        /*$nombre_materia = $request->input('nombre_materia');
         $crn = $request->input('crn');
         $seccion = $request->input('seccion');
-        $horario = $request->input('horario');
-        
+        $horario = $request->input('horario');*/
+        $materia = new Materia();
+        $materia->nombre_materia = $request->input('nombre_materia');
+        $materia->crn = $request->input('crn');
+        $materia->seccion = $request->input('seccion');
+        $materia->horario = $request->input('horario');
+        $materia->save();
+      
+        return redirect()->route('materia.index');
+          
         //Sql INSERT_INTO Materia
         
         

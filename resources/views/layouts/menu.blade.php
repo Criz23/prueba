@@ -6,4 +6,10 @@
       <li><a class="treeview-item" href="{{ route('materia.create') }}"><i class="icon fa fa-circle-o"></i> Nueva Materia</a></li>
     </ul>
   </li>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Alumnos</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+    <ul class="treeview-menu">
+      <li><a class="treeview-item" href="{{ route('alumno.index') }}"><i class="icon fa fa-circle-o"></i> Listado de Alumnos</a></li>
+      <li><a class="treeview-item" href="{{ route('alumno.create') }}"><i class="icon fa fa-circle-o"></i> Registrar Alumno</a></li>
+    </ul>
+  </li>
 </ul>
